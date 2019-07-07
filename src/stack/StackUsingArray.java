@@ -27,7 +27,7 @@ public class StackUsingArray {
     public int pop() {
         if (isEmpty()) {
             System.out.println("Stack Underflow, Unable to pop item");
-            return 0;
+            return -1;
         } else {
             return stack[top--];
         }
@@ -36,7 +36,7 @@ public class StackUsingArray {
     public int peek() {
         if (isEmpty()) {
             System.out.println("Stack Underflow, Unable to peek item");
-            return 0;
+            return -1;
         } else {
             return stack[top];
         }
