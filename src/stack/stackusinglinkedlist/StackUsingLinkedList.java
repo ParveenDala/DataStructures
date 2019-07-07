@@ -2,7 +2,7 @@ package stack.stackusinglinkedlist;
 
 /******
  * Parveen Dala
- * Stack using Array, Data Structure
+ * Stack using Linked list, Data Structure
  */
 public class StackUsingLinkedList {
     Node head;
