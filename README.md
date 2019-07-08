@@ -45,12 +45,26 @@ Data Structures in Java
 > isEmpty  
 > isFull (NA)  
   
-  
+#6. Linear Queue Using Array  
+> Enqueue  
+> Dequeue  
+> isEmpty  
+> isFull  
 
+#7. Binary Tree Using Linked List  
+> Traverse - LevelOrder, InOrder, PreOrder, PostOrder  
+> Insert Node  
+> Delete Node  
+> Search  
+> Height Of The Tree  
+> Deepest Of The Tree  
 
-
-
-
+#8. Binary Search Tree Using Linked List  
+> Traverse - LevelOrder, InOrder, PreOrder, PostOrder  
+> Insert Node  
+> Delete Node  
+> Search  
+> Height Of The Tree  
 
 
 

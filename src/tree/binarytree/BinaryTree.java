@@ -20,6 +20,7 @@ public class BinaryTree {
             System.out.println("Empty tree");
         } else {
             levelOrderTraversal(root);
+            System.out.println();
         }
     }
 
@@ -63,7 +64,6 @@ public class BinaryTree {
                 queue.add(current.right);
 
         }
-        System.out.println();
     }
 
     private void preOrderTraversal(Node root) {

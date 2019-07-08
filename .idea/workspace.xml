@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a37bb3-31a3-4f74-9b02-2d6ad3c1647a" name="Default Changelist" comment="" />
+    <list default="true" id="71a37bb3-31a3-4f74-9b02-2d6ad3c1647a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tree/binarytree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/binarytree/BinaryTree.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,35 +21,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tree/binarytree/BinaryTree.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tree/bst/BST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            <state relative-caret-position="170">
+              <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#115#116#0" expanded="true" />
-                <element signature="e#3813#3814#0" expanded="true" />
-                <element signature="e#6359#6360#0" expanded="true" />
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="method#levelOrderTraversal#1;class#BST#0" />
+                <element signature="method#inOrderTraversal#2;class#BST#0" />
+                <element signature="method#inOrderTraversal#3;class#BST#0" />
+                <element signature="method#inOrderTraversal#4;class#BST#0" />
+                <element signature="method#inOrderTraversal#5;class#BST#0" />
+                <element signature="class#Node#0" />
+                <element signature="e#165#166#0" expanded="true" />
+                <element signature="e#198#199#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/queue/circularqueue/CircularQueue.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tree/bst/TestBST.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="3" lean-forward="true" selection-start-line="2" selection-end-line="5" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tree/binarytree/TestBinaryTree.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="255">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -90,6 +91,8 @@
         <option value="$PROJECT_DIR$/src/queue/QueueUsingArray.java" />
         <option value="$PROJECT_DIR$/src/tree/binarytree/TestBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/tree/binarytree/BinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/tree/bst/BST.java" />
+        <option value="$PROJECT_DIR$/src/tree/bst/TestBST.java" />
       </list>
     </option>
   </component>
@@ -124,7 +127,7 @@
               <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="binarytree" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -149,20 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TestBinaryTree">
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="linkedlist.circularlinkedlist.Client" />
-      <module name="DataStructures" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="linkedlist.circularlinkedlist.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestBST">
     <configuration name="Client (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="stack.stackusinglinkedlist.Client" />
       <module name="DataStructures" />
@@ -215,6 +205,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tree.bst.TestBST" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tree.bst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tree.binarytree.TestBinaryTree" />
       <module name="DataStructures" />
@@ -229,18 +232,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Client (2)" />
       <item itemvalue="Application.Client (3)" />
       <item itemvalue="Application.Client (4)" />
       <item itemvalue="Application.Client (5)" />
       <item itemvalue="Application.TestBinaryTree" />
+      <item itemvalue="Application.TestBST" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestBST" />
         <item itemvalue="Application.TestBinaryTree" />
         <item itemvalue="Application.Client (5)" />
         <item itemvalue="Application.Client (4)" />
-        <item itemvalue="Application.Client (3)" />
         <item itemvalue="Application.Client (3)" />
       </list>
     </recent_temporary>
@@ -262,7 +265,7 @@
     <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16413374" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16413374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -271,7 +274,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.363047" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5089141" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987034" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -472,27 +475,99 @@
     <entry file="file://$PROJECT_DIR$/src/tree/binarytree/TestBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/queue/circularqueue/CircularQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="2" selection-end-line="5" selection-end-column="3" />
+          <caret line="5" column="3" selection-start-line="2" selection-end-line="5" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tree/binarytree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        <state relative-caret-position="102">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <element signature="docComment;class#BinaryTree#0" />
+            <element signature="class#BinaryTree#0" />
+            <element signature="method#levelOrderTraversal#0;class#BinaryTree#0" />
+            <element signature="e#313#370#1" />
+            <element signature="e#376#426#1" />
+            <element signature="method#preOrderTraversal#0;class#BinaryTree#0" />
+            <element signature="e#498#555#1" />
+            <element signature="e#561#643#1" />
+            <element signature="method#inOrderTraversal#0;class#BinaryTree#0" />
+            <element signature="e#714#771#1" />
+            <element signature="e#777#858#1" />
+            <element signature="method#postOrderTraversal#0;class#BinaryTree#0" />
+            <element signature="e#931#988#1" />
+            <element signature="e#994#1077#1" />
+            <element signature="method#levelOrderTraversal#1;class#BinaryTree#0" />
+            <element signature="e#1242#1508#1" />
+            <element signature="method#preOrderTraversal#1;class#BinaryTree#0" />
+            <element signature="method#inOrderTraversal#1;class#BinaryTree#0" />
+            <element signature="method#postOrderTraversal#1;class#BinaryTree#0" />
+            <element signature="method#search#0;class#BinaryTree#0" />
+            <element signature="e#2274#2339#1" />
+            <element signature="e#2345#2389#1" />
+            <element signature="method#search#1;class#BinaryTree#0" />
+            <element signature="e#2551#2899#1" />
+            <element signature="e#2636#2729#1" />
+            <element signature="method#insert#0;class#BinaryTree#0" />
+            <element signature="e#3103#3139#1" />
+            <element signature="e#3145#3705#1" />
+            <element signature="e#3266#3695#1" />
+            <element signature="e#3357#3444#1" />
+            <element signature="e#3477#3565#1" />
+            <element signature="e#3571#3681#1" />
+            <element signature="method#delete#1;class#BinaryTree#0" />
+            <element signature="e#3889#3982#1" />
+            <element signature="e#4091#4587#1" />
+            <element signature="e#4176#4380#1" />
+            <element signature="e#4386#4577#1" />
+            <element signature="method#deleteDeepestNode#0;class#BinaryTree#0" />
+            <element signature="e#4691#4722#1" />
+            <element signature="e#4863#5356#1" />
+            <element signature="e#4946#5127#1" />
+            <element signature="e#5160#5235#1" />
+            <element signature="method#getHeightOfTree#0;class#BinaryTree#0" />
+            <element signature="e#5426#5508#1" />
+            <element signature="e#5599#5667#1" />
+            <element signature="method#getDeepestNode#0;class#BinaryTree#0" />
+            <element signature="e#5791#5827#1" />
+            <element signature="e#5960#6154#1" />
+            <element signature="class#Node#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/bst/BST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#115#116#0" expanded="true" />
-            <element signature="e#3813#3814#0" expanded="true" />
-            <element signature="e#6359#6360#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="method#levelOrderTraversal#1;class#BST#0" />
+            <element signature="method#inOrderTraversal#2;class#BST#0" />
+            <element signature="method#inOrderTraversal#3;class#BST#0" />
+            <element signature="method#inOrderTraversal#4;class#BST#0" />
+            <element signature="method#inOrderTraversal#5;class#BST#0" />
+            <element signature="class#Node#0" />
+            <element signature="e#165#166#0" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tree/bst/TestBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
