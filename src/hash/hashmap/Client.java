@@ -4,12 +4,18 @@ import java.util.Objects;
 
 /******
  * Parveen Dala
- * HashMap2, Data Structure
+ * HashMap, Data Structure
  */
 public class Client {
     public static void main(String[] args) {
 
         HashMap map = new HashMap();
+
+        map.display();
+        map.remove(0);
+        map.remove("Ok");
+        map.display();
+
         map.put(1, 100);
         map.put(2, 200);
         map.put(3, 300);

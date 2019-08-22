@@ -1,5 +1,9 @@
 package hash.hashmap;
 
+/******
+ * Parveen Dala
+ * HashMap, Data Structure
+ */
 public class HashMap<K, V> {
 
     private int defaultCapacity = 10;
@@ -110,6 +114,8 @@ public class HashMap<K, V> {
     }
 
     public void display() {
+        if (table == null)
+            return;
         System.out.println("\n>>>>>>>>>>>> Size/Capacity = " + size + "/" + maxCapacity + " <<<<<<<<<<<<<<<\n");
         if (table != null) {
             int i = 0;
@@ -129,6 +135,8 @@ public class HashMap<K, V> {
     }
 
     public V get(K key) {
+        if (table == null)
+            return null;
         int hash = 0;
         int index = 0;
         if (key != null) {
@@ -147,6 +155,8 @@ public class HashMap<K, V> {
     }
 
     public V remove(K key) {
+        if (table == null)
+            return null;
         int hash = 0;
         int index = 0;
         if (key != null) {
@@ -154,20 +164,16 @@ public class HashMap<K, V> {
             index = hash % maxCapacity;
         }
 
-        Node<K, V> current = table[index];
-        if (current != null) {
-            Node<K, V> previous = null;
-            for (; current != null; previous = current, current = current.next) {
-                if (hash == current.hash && (current.key == key || (current.key != null && current.key.equals(key)))) {
-                    V value = current.value;
+        for (Node<K, V> current = table[index], previous = null; current != null; previous = current, current = current.next) {
+            if (hash == current.hash && (current.key == key || (current.key != null && current.key.equals(key)))) {
+                V value = current.value;
 
-                    if (previous == null)
-                        table[index] = current.next;
-                    else
-                        previous.next = current.next;
-                    size--;
-                    return value;
-                }
+                if (previous == null)
+                    table[index] = current.next;
+                else
+                    previous.next = current.next;
+                size--;
+                return value;
             }
         }
         return null;
