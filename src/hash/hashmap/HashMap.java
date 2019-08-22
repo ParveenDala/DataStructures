@@ -129,6 +129,20 @@ public class HashMap<K, V> {
     }
 
     public V get(K key) {
+        int hash = 0;
+        int index = 0;
+        if (key != null) {
+            hash = key.hashCode();
+            index = hash % maxCapacity;
+        }
+        Node<K, V> node = table[index];
+        if (node != null) {
+            for (Node<K, V> current = node; current != null; current = current.next) {
+                if (hash == current.hash && (current.key == key || (current.key != null && current.key.equals(key)))) {
+                    return current.value;
+                }
+            }
+        }
         return null;
     }
 

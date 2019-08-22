@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a37bb3-31a3-4f74-9b02-2d6ad3c1647a" name="Default Changelist" comment="HashMap implementation in Java">
+    <list default="true" id="71a37bb3-31a3-4f74-9b02-2d6ad3c1647a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hash/hashmap/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/hashmap/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hash/hashmap/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hash/hashmap/HashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/hash/hashmap/HashMap.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,30 +21,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hash/hashmap/HashMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+            <state relative-caret-position="587">
+              <caret line="142" column="9" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
               <folding>
-                <element signature="e#439#440#0" expanded="true" />
+                <element signature="method#resize#0;class#HashMap#0" />
                 <element signature="method#putForNotNull#1;class#HashMap#0" />
                 <element signature="method#display#0;class#HashMap#0" />
-                <element signature="n#!!block;n#get#0;n#HashMap#0" />
-                <element signature="e#3987#3988#0" expanded="true" />
-                <element signature="class#Node#0;class#HashMap#0" />
-                <element signature="e#2746#2747#0" expanded="true" />
-                <element signature="e#2780#2781#0" expanded="true" />
+                <element signature="e#4275#4276#0" expanded="true" />
+                <element signature="e#4329#4330#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hash/hashmap/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="294">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="e#1208#1209#0" expanded="true" />
                 <element signature="e#1288#1289#0" expanded="true" />
@@ -114,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/hash/Client.java" />
         <option value="$PROJECT_DIR$/src/hash/hashmap/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/hash/hashmap/HashMap2.java" />
-        <option value="$PROJECT_DIR$/src/hash/hashmap/Client.java" />
         <option value="$PROJECT_DIR$/src/hash/hashmap/HashMap.java" />
+        <option value="$PROJECT_DIR$/src/hash/hashmap/Client.java" />
       </list>
     </option>
   </component>
@@ -299,7 +296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1566477014239</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HashMap implementation in Java">
+      <created>1566499967970</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1566499967970</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Resize HashMap based on load factor">
+      <created>1566501826449</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1566501826449</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -336,7 +347,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="HashMap implementation in Java" />
-    <option name="LAST_COMMIT_MESSAGE" value="HashMap implementation in Java" />
+    <MESSAGE value="Resize HashMap based on load factor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resize HashMap based on load factor" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/trie/Main.java">
@@ -661,32 +673,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hash/hashmap/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="142" column="9" selection-start-line="142" selection-start-column="9" selection-end-line="142" selection-end-column="9" />
+          <folding>
+            <element signature="method#resize#0;class#HashMap#0" />
+            <element signature="method#putForNotNull#1;class#HashMap#0" />
+            <element signature="method#display#0;class#HashMap#0" />
+            <element signature="e#4275#4276#0" expanded="true" />
+            <element signature="e#4329#4330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hash/hashmap/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="294">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="e#1208#1209#0" expanded="true" />
             <element signature="e#1288#1289#0" expanded="true" />
             <element signature="e#2481#2482#0" expanded="true" />
             <element signature="e#2526#2527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hash/hashmap/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="method#putForNotNull#1;class#HashMap#0" />
-            <element signature="method#display#0;class#HashMap#0" />
-            <element signature="n#!!block;n#get#0;n#HashMap#0" />
-            <element signature="e#3987#3988#0" expanded="true" />
-            <element signature="class#Node#0;class#HashMap#0" />
-            <element signature="e#2746#2747#0" expanded="true" />
-            <element signature="e#2780#2781#0" expanded="true" />
           </folding>
         </state>
       </provider>

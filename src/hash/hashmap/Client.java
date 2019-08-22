@@ -38,6 +38,15 @@ public class Client {
         map.put(new Test(1, "Parveen"), "Parveen2");
 
         map.display();
+
+        System.out.println(map.get(new Test(1, "Parveen")));
+        System.out.println(map.get(new Test(1, "Parveen2")));
+        System.out.println(map.get(null));
+        System.out.println(map.get(0));
+        System.out.println(map.get(5));
+        System.out.println(map.get(45));
+        System.out.println(map.get(48));
+
     }
 }
 
