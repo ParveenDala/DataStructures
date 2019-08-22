@@ -25,13 +25,7 @@ public class Client {
         map.put(15, 7000);
         map.put("Hello", 2312);
         map.put("Hello", 121);
-        String s1 = new String("Hello");
-        System.out.println(s1.hashCode());
-        String s2 = new String("Hello");
-        System.out.println(s2.hashCode());
-        System.out.println(new String("Hello"));
-        map.put(s1, 111);
-        map.put(s2, 222);
+        map.put(new String("Hello"), 111);
         map.put(new String("Hello"), 222);
         map.put("Ok", 542);
         map.put("Ok", "Name");
@@ -39,6 +33,7 @@ public class Client {
         map.put(null, "Name55");
         map.put(null, "Name65");
         map.put(0, "Name22");
+        map.put(0.5, "Name0.5");
         map.put(new Test(1, "Parveen"), "Parveen1");
         map.put(new Test(1, "Parveen"), "Parveen2");
 

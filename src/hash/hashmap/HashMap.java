@@ -18,6 +18,7 @@ public class HashMap<K, V> {
     }
 
     private void inflateTable() {
+        size = 0;
         table = new Node[maxCapacity];
     }
 
@@ -31,8 +32,16 @@ public class HashMap<K, V> {
 
         int hash = key.hashCode();
         int index = (hash % maxCapacity);
+        for (Node<K, V> current = table[index]; current != null; current = current.next) {
+            if ((current.hash == hash) && ((current.key == key) || (current.key != null && current.key.equals(key)))) {
+                V oldValue = current.value;
+                current.value = value;
+                System.out.println("Updated  > " + oldValue + " TO " + value + "  Where key = " + key + " & hash = " + hash + "  & index = " + index);
+                return oldValue;
+            }
+        }
 
-        putForNotNull(key, value, hash, index);
+        addNewEntry(key, value, hash, index);
         return null;
     }
 
@@ -44,26 +53,32 @@ public class HashMap<K, V> {
                 return oldValue;
             }
         }
-        size++;
-        table[0] = new Node<>(null, value, 0, table[0]);
+        addNewEntry(null, value, 0, 0);
         return null;
     }
 
-    private V putForNotNull(K key, V value, int hash, int index) {
-        for (Node<K, V> current = table[index]; current != null; current = current.next) {
-            if ((current.hash == hash) && ((current.key == key) || (current.key != null && current.key.equals(key)))) {
-                V oldValue = current.value;
-                current.value = value;
-                System.out.println("Updated " + oldValue + "  >  " + value + "  Where key = " + key + " & hash = " + hash + "  & index = " + index);
-                return oldValue;
-            }
-        }
-
-        //Insert New Node
-        size++;
+    //Insert New Node
+    private void addNewEntry(K key, V value, int hash, int index) {
         table[index] = new Node<>(key, value, hash, table[index]);
         System.out.println("Inserted > " + value + "  Where key = " + key + " & hash = " + hash + "  & index = " + index);
-        return null;
+        size++;
+        if (size > (maxCapacity * loadFactor))
+            resize();
+    }
+
+    private void resize() {
+        display();
+        maxCapacity *= 2;
+
+        System.out.println("\n<<<<<<<<<<<<<<<<< Resize, Update Capacity is " + maxCapacity + " >>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n");
+
+        Node<K, V>[] tempTable = table;
+        inflateTable();
+        for (Node<K, V> node : tempTable) {
+            for (Node<K, V> current = node; current != null; current = current.next)
+                put(current.key, current.value);
+        }
+
     }
 
     //For both Null and ot Null
@@ -95,17 +110,19 @@ public class HashMap<K, V> {
     }
 
     public void display() {
-        System.out.println("Size: " + size);
+        System.out.println("\n>>>>>>>>>>>> Size/Capacity = " + size + "/" + maxCapacity + " <<<<<<<<<<<<<<<\n");
         if (table != null) {
             int i = 0;
             for (Node<K, V> node : table) {
-                System.out.print(i + " >>  ");
-                Node<K, V> current = node;
-                while (current != null) {
-                    System.out.print(current.toString() + "  ,  ");
-                    current = current.next;
+                if (node != null) {
+                    System.out.print(i + " >  ");
+                    Node<K, V> current = node;
+                    while (current != null) {
+                        System.out.print(current.toString() + ",  ");
+                        current = current.next;
+                    }
+                    System.out.println();
                 }
-                System.out.println();
                 i++;
             }
         }
@@ -130,7 +147,7 @@ public class HashMap<K, V> {
 
         @Override
         public String toString() {
-            return key + " : " + value;
+            return "(" + key + " : " + value + ")";
         }
     }
 }
