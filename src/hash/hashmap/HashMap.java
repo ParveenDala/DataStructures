@@ -146,6 +146,33 @@ public class HashMap<K, V> {
         return null;
     }
 
+    public V remove(K key) {
+        int hash = 0;
+        int index = 0;
+        if (key != null) {
+            hash = key.hashCode();
+            index = hash % maxCapacity;
+        }
+
+        Node<K, V> current = table[index];
+        if (current != null) {
+            Node<K, V> previous = null;
+            for (; current != null; previous = current, current = current.next) {
+                if (hash == current.hash && (current.key == key || (current.key != null && current.key.equals(key)))) {
+                    V value = current.value;
+
+                    if (previous == null)
+                        table[index] = current.next;
+                    else
+                        previous.next = current.next;
+                    size--;
+                    return value;
+                }
+            }
+        }
+        return null;
+    }
+
     class Node<K, V> {
         K key;
         V value;

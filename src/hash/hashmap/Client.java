@@ -46,6 +46,10 @@ public class Client {
         System.out.println(map.get(5));
         System.out.println(map.get(45));
         System.out.println(map.get(48));
+        map.display();
+        map.remove(0);
+        map.remove("Ok");
+        map.display();
 
     }
 }
